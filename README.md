@@ -23,14 +23,6 @@ batch_geocode(address_df, thread_num = 20, key = "")
 # Function output
 The batch_geocode function's output is a 3-dimension dataframe contains columns 'address', 'lat', 'lon'.
 
-
--      address    lat        lon
-- 0    xxxxx      1.5314     45.3211
-- 1    yyyyy      2.3355     30.5432
-- 2    zzzzz      5.3275     53.2897
-- ...  ...        ...        ...
-
-
 # Something else
 1. There are totally 3 functions in the script, the third one (batch_geocode) should be the one you might directly use.
 2. Output order will be the same as the input order if no duplicates in the input data.
