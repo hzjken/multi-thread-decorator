@@ -18,7 +18,7 @@ batch_geocode(address_df, thread_num = 20, key = "")
 
 1. address_df: a list, array, series or one-dimension dataframe of address to do geocoding, will be better if no duplicates.
 2. thread_num: the number of multi-threading line. Default is set to be 20. The larger the number, the faster the geocoding process. You can adjust the number according to your net speed, but please make sure it doesn't exceed the upper limit of 50 requests per second set by Google.
-3.key: Google Maps Geocoding API key, default is no key.
+3. key: Google Maps Geocoding API key, default is no key.
 
 # Function output
 The batch_geocode function's output is a 3-dimension dataframe contains columns 'address', 'lat', 'lon'.
