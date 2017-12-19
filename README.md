@@ -1,5 +1,5 @@
 # large-batch-geocoding
-A convenient & efficient Google geocoding function for large list, array, series of address data using multi-threading techniques in python.
+A convenient & efficient Google geocoding function for large list, array, series of address data using multi-threading techniques for both  python3 and python2.
 
 # Advantages
 1. Multi-threading in the function enables you to do geocoding for large batch data much faster regardless of net speed.
