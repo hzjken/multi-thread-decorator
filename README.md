@@ -24,11 +24,11 @@ batch_geocode(address_df, thread_num = 20, key = "")
 The batch_geocode function's output is a 3-dimension dataframe contains columns 'address', 'lat', 'lon'.
 
 
-.      address    lat        lon
-. 0    xxxxx      1.5314     45.3211
-. 1    yyyyy      2.3355     30.5432
-. 2    zzzzz      5.3275     53.2897
-. ...  ...        ...        ...
+-      address    lat        lon
+- 0    xxxxx      1.5314     45.3211
+- 1    yyyyy      2.3355     30.5432
+- 2    zzzzz      5.3275     53.2897
+- ...  ...        ...        ...
 
 
 # Something else
