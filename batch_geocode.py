@@ -24,7 +24,7 @@ def get_lat_lon(address,g,local_var,lat_lon_list):
             lat_lon_list.append((location,0,0))
 
 
-def multi_thread_geocode(address_df,thread_num = 20, key = ''):    
+def multi_thread_geocode(address_df, thread_num, key):    
     '''multithreading Google API'''
     if key == '':
         g = geocoders.GoogleV3()
