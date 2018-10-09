@@ -5,7 +5,10 @@ A simple Python decorator function for executing "1 to 1" mappings in a parallel
 ```python
 multiThread(func, List, threadNum = 20)
 ```
-**1. func:** <br>the function to be decorated. It should have one main input argument.<br><br>
+**1. func:** <br>the function to be decorated. It should have one main input argument. If the function needs to take in **more than one argument**, those non-main arguments should be set fixed beforehand as below. 
+```python
+func = lambda x : orignalFunction(x, arg1 = arg1, arg2 = arg2, ...)
+```
 **2. List:** <br>the input data to be mapped by the function. It should be an iterable variable.(list, array, series etc.) <br><br>
 **3. threadNum:** <br>The number of threads to be used in the function, default 20. It should be adjusted according to different tasks and CPU capacities. Default 20 is set for geocoding task.
 
