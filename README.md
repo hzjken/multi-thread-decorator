@@ -44,4 +44,6 @@ revGeoResult = [(i,x[0]) for i,x in enumerate(revGeoResult) if x != None]
 ```
 With multi-threading, the processing speed for geocoding can be increased roughly by **20 times**. Theoretically, as long as the number of threads doesn't exceed the limit of processor and geocoding server, the higher the thread number, the faster the geocoding will be. However, more threads will bring heavier burden to the server, which might lead to higher error rate in the geocoding. Therefore, you will need to choose a proper thread number for a specific task.<br>
 
-In short, when dealing with large list mapping, this multi-thread decorator can be used to accelerate the process, especially when an external API needs to be called or internet services are required. Hope this function can help!
+In short, when dealing with large list mapping, this multi-thread decorator can be used to accelerate the process, especially when an external API needs to be called or internet services are required. 
+
+**Hope this function helps!**
