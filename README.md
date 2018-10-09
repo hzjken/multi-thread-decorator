@@ -1,5 +1,5 @@
-# large-batch-geocoding
-A convenient & efficient Google geocoding function for large list, array, series of address data using multi-threading techniques for both  python 3 and python 2.
+# Multi-thread Decorator
+A Python decorator for executing "1 to 1" mappings in a paralleled way using multi-threading technique. It can be applied in many cases to increase efficiency greatly. I have tried using it to accelerate geocoding task by 20-30 times.
 
 # Advantages
 1. Multi-threading in the function enables you to do geocoding for large batch data much faster regardless of net speed.
