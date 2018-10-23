@@ -36,13 +36,13 @@ latLonList = list(zip(data['lat'],data['lon']))
 **Multi-threaded geocoding with ArcGIS API**
 ```python
 g = geopy.geocoders.ArcGIS()
-geoResult = multiThread(g.geocode, addressList, threadNum = 10)
+geoResult = multiThread(g.geocode, addressList, threadNum = 20)
 geoResult = [(i,x[-1]) for i,x in enumerate(geoResult) if x != None]
 ```
 **Multi-threaded reverse-geocoding**
 ```python
 revGeoFunc = lambda x:g.reverse(x,timeout=5) #longer timeout helps to reduce error when thread number is big
-revGeoResult = multiThread(revGeoFunc, latLonList, threadNum = 10)
+revGeoResult = multiThread(revGeoFunc, latLonList, threadNum = 20)
 revGeoResult = [(i,x[0]) for i,x in enumerate(revGeoResult) if x != None]
 ```
 With multi-threading, the processing speed for geocoding can be increased roughly by **20 times**. Theoretically, as long as the number of threads doesn't exceed the limit of processor and geocoding server, the higher the thread number, the faster the geocoding will be. However, more threads will bring heavier burden to the server, which might lead to higher error rate in the geocoding. Therefore, you will need to choose a proper thread number for a specific task.<br>
